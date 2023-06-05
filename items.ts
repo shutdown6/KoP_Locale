@@ -22,6 +22,7 @@ const _getLocaleItemDescription = (
           cz: 'Dřevěný Meč',
           fr: 'Épée en bois',
           zh: '木劍',
+          pl: 'Drewniany Miecz',
         },
       }
     case ItemList.Wooden_Bow:
@@ -33,6 +34,7 @@ const _getLocaleItemDescription = (
           cz: 'Dřevěný Luk',
           fr: 'Arc en bois',
           zh: '木弓',
+          pl: 'Drewniany Łuk',
         },
       }
     case ItemList.Novice_Staff:
@@ -44,6 +46,7 @@ const _getLocaleItemDescription = (
           cz: 'Učňova Hůl',
           fr: 'Bâton de novice',
           zh: '木杖',
+          pl: 'Laska Nowicjusza',
         },
       }
     case ItemList.Iron_Ring:
@@ -55,6 +58,7 @@ const _getLocaleItemDescription = (
           cz: 'Železný Prsten',
           fr: 'Anneau de fer',
           zh: '鐵環',
+          pl: 'Drewniany Pierścień'
         },
       }
     case ItemList.Buckler:
@@ -66,6 +70,7 @@ const _getLocaleItemDescription = (
           cz: 'Pukléř',
           fr: 'Bouclier',
           zh: '盾牌',
+          pl: 'Puklerz'
         },
       }
     case ItemList.Shirt:
@@ -77,6 +82,7 @@ const _getLocaleItemDescription = (
           cz: 'Svetr',
           fr: 'Chemise',
           zh: '襯衫',
+          pl: 'Koszula'
         },
       }
     case ItemList.Light_Slayer:
@@ -88,6 +94,7 @@ const _getLocaleItemDescription = (
           cz: 'Kosič Světla',
           fr: 'Tueur de Lumière',
           zh: '輕量殺手',
+          pl: 'Poskramiacz Światła',
         },
       }
     case ItemList.Katana:
@@ -99,6 +106,7 @@ const _getLocaleItemDescription = (
           cz: 'Katana',
           fr: 'Katana',
           zh: '武士刀',
+          pl: 'Katana',
         },
       }
     case ItemList.Corrupted_Katana:
@@ -110,6 +118,7 @@ const _getLocaleItemDescription = (
           cz: 'Zvrácená Katana',
           fr: 'Katana corrompu',
           zh: '腐化的武士刀',
+          pl: 'Zepsuta Katana',
         },
         desc: {
           en: `Increases your Critical Damage by ${fixed(
@@ -133,6 +142,11 @@ const _getLocaleItemDescription = (
             1
           )}% pour chaque objet qui augmente les chances de coup critique dans votre inventaire.`,
           zh: `每件在你的背包中增加暴擊率的裝備，都會使你的暴擊傷害增加 ${fixed(CRITICAL_DAMAGE_MOD_5 * 100, 1)}%。`,
+
+          pl: `Zwiększa twoje Obrażenia Krytyczne o ${fixed(
+            CRITICAL_DAMAGE_MOD_5 * 100,
+            1
+          )}% dla każdego przedmiotu, który zwiększa szansę na Krytyczne Uderzenie w twoim ekwipunku.`,
         },
       }
     case ItemList.Iron_Sword:
@@ -144,6 +158,7 @@ const _getLocaleItemDescription = (
           cz: 'Ocelový Meč',
           fr: 'Épée de fer',
           zh: '鐵劍',
+          pl: 'Miecz Żelaznych Wojowników',
         },
       }
     case ItemList.Reckless_Longbow:
@@ -155,6 +170,7 @@ const _getLocaleItemDescription = (
           cz: 'Hazardní Dlouhý Luk',
           fr: 'Arc long téméraire',
           zh: '魯莽長弓',
+          pl: 'Nieostrożny Długi Łuk'
         },
       }
     case ItemList.Sentinel_longbow:
@@ -165,6 +181,7 @@ const _getLocaleItemDescription = (
           br: 'Besta da Resiliência encantada',
           fr: 'Arc long résistant',
           zh: '強靭長弓',
+          pl: 'Długi Łuk Zwinności',
         },
         desc: {
           en: `Increases projectile range by ${ItemAbilityData.RESILIENT_BOW_BULLET_RANGE}px and projectile speed by ${(
@@ -185,6 +202,9 @@ const _getLocaleItemDescription = (
           cz: `Zvýší dolet střelby o ${ItemAbilityData.RESILIENT_BOW_BULLET_RANGE} a rychlost o ${(
             ItemAbilityData.RESILIENT_BOW_BULLET_SPEED * 100
           ).toFixed(1)}%.`,
+          pl: `Zwiększa zasięg pocisków o ${ItemAbilityData.RESILIENT_BOW_BULLET_RANGE}px i prędkość pocisków o ${(
+            ItemAbilityData.RESILIENT_BOW_BULLET_SPEED * 100
+          ).toFixed(1)}%.`,
         },
       }
     case ItemList.Enduring_Shield:
@@ -196,6 +216,7 @@ const _getLocaleItemDescription = (
           cz: 'Odolný Štít',
           fr: 'Bouclier endurant',
           zh: '耐久護盾',
+          pl: 'Trwała Tarcza',
         },
       }
     case ItemList.Iron_Buckler:
@@ -207,6 +228,7 @@ const _getLocaleItemDescription = (
           cz: 'Železný Pukléř',
           fr: 'Bouclier de fer',
           zh: '鐵圓盾',
+          pl: 'Żelazny Puklerz',
         },
       }
     case ItemList.Magical_Shield:
@@ -218,6 +240,7 @@ const _getLocaleItemDescription = (
           cz: 'Magický Štít',
           fr: 'Bouclier magique',
           zh: '魔法護盾',
+          pl: 'Zaczarowana Tarcza',
         },
       }
     case ItemList.Rod_Of_Nature:
@@ -229,6 +252,7 @@ const _getLocaleItemDescription = (
           cz: 'Prut Přírody',
           fr: 'Baguette naturelle',
           zh: '大自然法棒',
+          pl: 'Różdżka Natury',
         },
       }
     case ItemList.Wizard_Staff:
@@ -240,6 +264,7 @@ const _getLocaleItemDescription = (
           cz: 'Hůl Kouzelníka',
           fr: 'Bâton du magicien',
           zh: '巫師法棍',
+          pl: 'Laska Czarownika',
         },
       }
     case ItemList.Ring_Of_Regeneration:
@@ -251,6 +276,7 @@ const _getLocaleItemDescription = (
           cz: 'Prsten Regenerace',
           fr: 'Anneau de régénération',
           zh: '再生手環',
+          pl: 'Pierścień Regeneracji',
         },
       }
     case ItemList.Ring_Of_Time:
@@ -262,6 +288,7 @@ const _getLocaleItemDescription = (
           cz: 'Prsten Času',
           fr: 'Anneau du Temps',
           zh: '時間手環',
+          pl: 'Pierścień Czasu',
         },
       }
     case ItemList.Leather_Armor:
@@ -273,6 +300,7 @@ const _getLocaleItemDescription = (
           cz: 'Kožená Zbroj',
           fr: 'Armure de cuir',
           zh: '皮革裝甲',
+          pl: 'Zbroja Ucznia'
         },
       }
     case ItemList.Iron_Armor:
@@ -284,6 +312,7 @@ const _getLocaleItemDescription = (
           cz: 'Železná Zbroj',
           fr: 'Armure de fer',
           zh: '鐵裝甲',
+          pl: 'Zbroja Żelaznych Wojowników',
         },
       }
     case ItemList.Iron_Pendant:
@@ -295,6 +324,7 @@ const _getLocaleItemDescription = (
           zh: '迷人的吊坠',
           cz: 'Okouzlující přívěsek',
           ru: 'Очаровательная подвеска',
+          pl: 'Czarujący Wisiorek',
         },
       }
     case ItemList.Plate_Armor:
@@ -306,6 +336,7 @@ const _getLocaleItemDescription = (
           cz: 'Plátová Zbroj',
           fr: 'Armure à plaques',
           zh: '金屬裝甲',
+          pl: 'Płytowa Zbroja',
         },
         desc: {
           en: `Amplifies all healing and regeneration effects by ${Math.floor(
@@ -314,6 +345,9 @@ const _getLocaleItemDescription = (
           ru: `Увеличивает эффективность входящего исцеления и эффектов регенерации на ${Math.floor(
             ItemAbilityData.PLATE_ARMOR_HP_AMP * 100
           )}%`,
+          pl: `Zwiększa wszystkie efekty leczenia i regeneracji o ${Math.floor(
+            ItemAbilityData.PLATE_ARMOR_HP_AMP * 100
+          )}%.`,
         },
       }
     case ItemList.Wizard_Shoes:
@@ -325,6 +359,7 @@ const _getLocaleItemDescription = (
           cz: 'Boty Kouzelníka',
           fr: 'Chaussures du magicien',
           zh: '巫師魔鞋',
+          pl: 'Buty Czarownika',
         },
       }
     case ItemList.Agility_Boots:
@@ -336,6 +371,7 @@ const _getLocaleItemDescription = (
           cz: 'Boty Obratnosti',
           fr: "Bottes d'agilité",
           zh: '敏捷之靴',
+          pl: 'Buty Zwinności',
         },
       }
     case ItemList.Boots:
@@ -347,6 +383,7 @@ const _getLocaleItemDescription = (
           cz: 'Boty',
           fr: 'Bottes',
           zh: '靴子',
+          pl: 'Buty',
         },
       }
     case ItemList.Divine_Boots:
@@ -358,6 +395,7 @@ const _getLocaleItemDescription = (
           cz: 'Svaté Sandále',
           fr: 'Bottes divines',
           zh: '神聖之靴',
+          pl: 'Buty Żelaznych Wojowników',
         },
       }
     case ItemList.Traveling_Boots:
@@ -369,6 +407,7 @@ const _getLocaleItemDescription = (
           cz: 'Cestovní Obuv',
           fr: 'Bottes de vitesse',
           zh: '神速之靴',
+          pl: 'Buty Prędkości',
         },
       }
     case ItemList.Shadow_Slayer:
@@ -380,6 +419,7 @@ const _getLocaleItemDescription = (
           cz: 'Stínovrah',
           fr: "Tueur d'Ombre",
           zh: '闇影殺手',
+          pl: 'Poskramiacz Ciemności',
         },
         desc: {
           en: `Your Basic Attack deals ${(ItemAbilityData.SHADOW_SLAYER_PERC_DMG * 100).toFixed(
@@ -414,6 +454,11 @@ const _getLocaleItemDescription = (
           )}% от макс. Здоровья цели, уменьшают Регенерацию здоровья до 0, а также наносят больше урона, который равен Регенерации здоровья цели в момент активации умноженной на ${
             ItemAbilityData.SHADOW_SLAYER_HP_REGEN_MODIFIER
           } в течение ${toSec(ItemAbilityData.SHADOW_SLAYER_DURATION)}.`,
+          pl: `Twój Atak Podstawowy zadaje ${(ItemAbilityData.SHADOW_SLAYER_PERC_DMG * 100).toFixed(
+            1
+          )}% Zdrowia przeciwnika jako dodatkowe Obrażenia Magiczne. Zapobiega Regeneracji Zdrowia przeciwnika i zadaje (${
+            ItemAbilityData.SHADOW_SLAYER_HP_REGEN_MODIFIER * 100
+          }% Regeneracji Zdrowia przeciwnika) Obrażeń Magicznych na sekundę przez ${toSec(ItemAbilityData.SHADOW_SLAYER_DURATION)}.`,
         },
       }
 
@@ -425,6 +470,7 @@ const _getLocaleItemDescription = (
           br: 'Espada Divina',
           cz: 'Božský meč',
           zh: '聖劍',
+          pl: 'Boski Miecz',
         },
         desc: {
           en: `Cleanses all negative effects. Decreases your Attack Damage by 75% and makes you immune to all incoming damage and negative effects for ${toSec(
@@ -439,6 +485,9 @@ const _getLocaleItemDescription = (
           zh: `神聖護盾 - 使你 ${toSec(
             ItemAbilityData.DIVINE_SWORD_DURATION
           )}無視所有效果並將你受到的攻擊傷害降至為 75%。`,
+          pl: `Oczyszcza cię ze wszystkich negatywnych efektów. Zmniejsza twoje Obrażenia Fizyczne o 75% i czyni cię odpornym na wszelkie nadchodzące obrażenia i negatywne efekty przez ${toSec(
+            ItemAbilityData.DIVINE_SWORD_DURATION
+          )}.`,
         },
       }
     case ItemList.Divine_Katana:
@@ -449,6 +498,7 @@ const _getLocaleItemDescription = (
           br: 'Katana Divina',
           fr: 'Katana divin',
           zh: '神聖武士刀',
+          pl: 'Boska Katana',
         },
         desc: {
           // Require update
@@ -456,6 +506,7 @@ const _getLocaleItemDescription = (
           ru: 'Вы бросаете фрагмент катаны перед собой, который при приземлении замедляет и накладывает немоту на всех ближайших вражеских героев, а также раскрывает все невидимые цели вокруг себя и даёт беспрепятственный обзор, пока находится на земле.',
           br: 'Joga a katana divina perto de você, no momento do impacto fornece visão desobstruída, silencia e desacelera todos os heróis inimigos na área. Além disso, revelará todas as unidades invisíveis na área.',
           zh: '在你前方投擲片段武士刀，提供寬廣視野，沉默且減速在範圍內的敵方英雄。此外能揭發隱蔽單位',
+          pl: 'Rzucasz fragment katany, który ucisza i zmniejsza Prędkość Ruchu przeciwników znajdujących się w jego zasięgu. Zapewnia niezakłóconą wizję i ujawnia wszystkie niewidzialne jednostki w jego zasięgu.'
         },
       }
     case ItemList.Iron_Basher:
@@ -465,6 +516,7 @@ const _getLocaleItemDescription = (
           ru: 'Шипастая булава',
           br: 'Maçã Cravada',
           zh: '尖刺錘',
+          pl: 'Kolczasta Maczuga',
         },
         desc: {
           en: `Your Basic Attack instantly kills enemies with less than ${(
@@ -485,6 +537,9 @@ const _getLocaleItemDescription = (
           cz: `Tvůj normální útok okamžitě zabije nepřítele, když je zdraví nepřítele pod ${(
             ItemAbilityData.SPIKED_MACE_THRESHOLD * 100
           ).toFixed(1)}%`,
+          pl: `Twój Atak Podstawowy natychmiast zabija przeciwników poniżej ${(
+            ItemAbilityData.SPIKED_MACE_THRESHOLD * 100
+          ).toFixed(1)}% ich pozostałego Zdrowia.`,
         },
       }
     case ItemList.Plague_Ring:
@@ -492,6 +547,7 @@ const _getLocaleItemDescription = (
         name: {
           en: 'Plague Ring',
           ru: 'Чумное кольцо',
+          pl: 'Pierścień Plagi',
         },
         desc: {
           en: `Increases the duration of all negative effects applied by your Abilities by ${Math.floor(
@@ -510,6 +566,9 @@ const _getLocaleItemDescription = (
           cz: `Zvyšte dobu trvání o ${Math.floor(
             ItemAbilityData.PLAGUE_RING_MODIFIER * 100
           )}% všech negativních efektů, které vaše schopnosti aplikují.`,
+          pl: `Zwiększa czas trwania wszystkich negatywnych efektów nałożonych przez twoje Umiejętności o ${Math.floor(
+            ItemAbilityData.PLAGUE_RING_MODIFIER * 100
+          )}%.`,
         },
       }
 
@@ -521,6 +580,7 @@ const _getLocaleItemDescription = (
           br: 'Espada do Imperador Congelado',
           fr: 'Épée gelée',
           zh: '寒冰之劍',
+          pl: 'Miecz Mroźnego Cesarza'
         },
         desc: {
           en: `Your Basic Attacks apply a stack of physical frost on the enemy. At ${
@@ -541,6 +601,9 @@ const _getLocaleItemDescription = (
           cz: `Vaše základní útoky na protivníka přidávají štíty. Po dosažení ${
             ItemAbilityData.COLD_SWORD_STACKS
           } štítů protivník trpí Zimní prokletím - ${getFrigidCurseDescription()}`,
+          pl: `Twoje Ataki Podstawowe nakładają Ładunki Mrozu na przeciwniku. Przy ${
+            ItemAbilityData.COLD_SWORD_STACKS
+          } ładunkach, na przeciwnika nałożona zostaje Klątwa Lodu - ${getFrigidCurseDescription()}.`,
         },
       }
     case ItemList.Corrupted_Light_Slayer:
@@ -551,6 +614,7 @@ const _getLocaleItemDescription = (
           br: 'Corta Luz corrompido',
           fr: 'Tueur de Lumière Corrompu',
           zh: '腐化的輕量殺手',
+          pl: 'Zepsuty Poskramiacz Światła',
         },
         desc: {
           en: `Grants ${(ItemAbilityData.CORRUPTED_LIGHT_SLAYER_LIFESTEAL * 100).toFixed(1)}% Lifesteal and ${
@@ -573,6 +637,9 @@ const _getLocaleItemDescription = (
           )}% životodárného kradení a ${
             ItemAbilityData.CORRUPTED_LIGHT_SLAYER_DAMAGE
           } bodů poškození útoku blízkým spojencům.`,
+          pl: `Zapewnia ${(ItemAbilityData.CORRUPTED_LIGHT_SLAYER_LIFESTEAL * 100).toFixed(1)}% Kradzieży Życia oraz ${
+            ItemAbilityData.CORRUPTED_LIGHT_SLAYER_DAMAGE
+          } Obrażeń Fizycznych pobliskim sojusznikom.`,
         },
       }
     /** Wooden Bow */
@@ -584,6 +651,7 @@ const _getLocaleItemDescription = (
           br: 'Besta Incontrolável',
           fr: 'Arc du Berserker',
           zh: '狂戰士之弓',
+          pl: 'Łuk Berserkera',
         },
         desc: {
           en: `Whenever your Basic Attack hits an enemy, gain a stack of berserk, up to a maximum of 8 stacks. Each stack increases your Attack Speed by ${Math.floor(
@@ -604,6 +672,9 @@ const _getLocaleItemDescription = (
           zh: `每當你的一般攻擊擊中敵方英雄，增加 ${(ItemAbilityData.BERSERKER_BOW_DURATION / 1000).toFixed(
             1
           )}秒你的攻擊速度 ${Math.floor(ItemAbilityData.BERSERKER_BOW_BONUS_ATTACK_SPEED * 100)}%`,
+          pl: `Gdy uderzysz przeciwnika swoim Atakiem Podstawowykrótki dystansadunek Berserkera, maksymalnie do 8 ładunków. Każdy ładunek zwiększa twoją Prędkość Ataku o ${Math.floor(
+            ItemAbilityData.BERSERKER_BOW_BONUS_ATTACK_SPEED * 100
+          )}% na ${(ItemAbilityData.BERSERKER_BOW_DURATION / 1000).toFixed(1)} sekund.`,
         },
       }
     case ItemList.Magical_Bow:
@@ -614,6 +685,7 @@ const _getLocaleItemDescription = (
           br: 'Arco das Almas perdidas',
           fr: 'Arc magique',
           zh: '魔法之弓',
+          pl: 'Magiczny Łuk',
         },
         desc: {
           en:
@@ -634,6 +706,9 @@ const _getLocaleItemDescription = (
           zh:
             '你的魔法攻擊成功擊中敵方英雄時，增加 1.5秒你的移動速度值 10 \n \n' +
             getPoisonBowDescription(ItemAbilityData.POISON_BOW_DURATION_2),
+          pl:
+            'Gdy uderzysz przeciwnika swoją Umiejętnością, twoja Prędkość Ruchu zwiększa się o 10 na 1.5 sekund. \n \n' +
+            getPoisonBowDescription(ItemAbilityData.POISON_BOW_DURATION_2),
         },
       }
     case ItemList.Poison_Bow:
@@ -644,6 +719,7 @@ const _getLocaleItemDescription = (
           br: 'Arco de Veneno concentrado',
           fr: 'Arc empoisonné',
           zh: '劇毒之弓',
+          pl: 'Zatruty Łuk',
         },
         desc: { en: getPoisonBowDescription(ItemAbilityData.POISON_BOW_DURATION_1) },
       }
@@ -656,6 +732,7 @@ const _getLocaleItemDescription = (
           br: 'Arco Corrompido',
           fr: 'Arc long corrompu',
           zh: '腐化的長弓',
+          pl: 'Łuk Zepsucia',
         },
         desc: {
           en:
@@ -711,6 +788,17 @@ const _getLocaleItemDescription = (
             )}%魔法抗性` +
             "\n \n<b class='ability-d'>" +
             getPoisonBowDescription(ItemAbilityData.POISON_BOW_DURATION_2),
+          pl:
+            `Zatruwa twoją krew i czyni cię szybszym, zwiększając Prędkość Ataku o ${
+              ItemAbilityData.CORRUPTED_LONGBOW_BONUS_ATTACK_SPEED * 100
+            }% i zwiększając twoją Prędkość Ruchu o ${ItemAbilityData.CORRUPTED_LONGBOW_BONUS_MOVESPEED} na ${(
+              ItemAbilityData.CORRUPTED_LONGBOW_DURATION / 1000
+            ).toFixed(1)} sekund.\n` +
+            `Ten efekt również redukuje twój pancerz o ${
+              ItemAbilityData.CORRUPTED_LONGBOW_REDUCE_ARMOR
+            } i Odporność Magiczną o ${calculateMagicDefense(ItemAbilityData.CORRUPTED_LONGBOW_REDUCE_MR)}.` +
+            "\n \n<b class='ability-d'>" +
+            getPoisonBowDescription(ItemAbilityData.POISON_BOW_DURATION_2),
         },
       }
     case ItemList.Hunters_Longbow:
@@ -721,6 +809,7 @@ const _getLocaleItemDescription = (
           br: 'Besta da Velocidade encantada',
           fr: 'Arc long de chasseur',
           zh: '獵人長弓',
+          pl: 'Łuk Łowcy',
         },
         desc: {
           en: `Grants ${(ItemAbilityData.HUNTER_BOW_RADIUS_ATKSPED * 100).toFixed()}% Attack Speed to nearby allies.`,
@@ -737,6 +826,7 @@ const _getLocaleItemDescription = (
           cz: `Zvýšení ${(
             ItemAbilityData.HUNTER_BOW_RADIUS_ATKSPED * 100
           ).toFixed()}% rychlosti útoku pro všechny přátelské jednotky v okolí.`,
+          pl: `Zapewnia ${(ItemAbilityData.HUNTER_BOW_RADIUS_ATKSPED * 100).toFixed()}% Prędkości Ataku pobliskim sojusznikom.`,
         },
       }
     /** Nowice staff */
@@ -748,6 +838,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado Incandescente',
           fr: 'Baguette brûlante',
           zh: '燃燒法棒',
+          pl: 'Płonąca Różdżka'
         },
         desc: {
           en: `Your abilites ignite enemy heroes, dealing ${fixed(
@@ -773,6 +864,12 @@ const _getLocaleItemDescription = (
           zh: `你的技能點燃敵方並額外給予 ${(ItemAbilityData.BURNING_ROD_DURATION / 1000).toFixed(
             1
           )}秒每秒最大血量 ${fixed(ItemAbilityData.BURNING_ROD_DAMAGE_OVER_TIME_PERC * 100, 1)}%傷害`,
+          pl: `Twoje Umiejętności podpalają przeciwnych bohaterów, zadając ${fixed(
+            ItemAbilityData.BURNING_ROD_DAMAGE_OVER_TIME_PERC * 100,
+            1
+          )}% ich Maksymalnego Zdrowia jako Obrażenia Magiczne przez ${(ItemAbilityData.BURNING_ROD_DURATION / 1000).toFixed(
+            1
+          )} sekund.`,
         },
       }
     case ItemList.Vampiric_Rod:
@@ -783,6 +880,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado Vampírico',
           fr: 'Baguette vampirique',
           zh: '吸血鬼法棒',
+          pl: 'Wampiryczna Różdżka',
         },
         desc: {
           en: `Your Abilities heal you for ${fixed(
@@ -801,6 +899,10 @@ const _getLocaleItemDescription = (
             ItemAbilityData.VAMPIRIC_ROD_HP_STEAL * 100,
             1
           )}%給予的傷害恢復自己生命值。`,
+          pl: `Twoje Umiejętności leczą cię za ${fixed(
+            ItemAbilityData.VAMPIRIC_ROD_HP_STEAL * 100,
+            1
+          )}% zadanych obrażeń. (65% słabiej przeciwko minionom)`,
         },
       }
     case ItemList.Kirin_Staff:
@@ -811,6 +913,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado de Kirin',
           fr: 'Bâton de Kirin',
           zh: '麒麟法棍',
+          pl: 'Laska Kirin',
         },
         desc: {
           en: `Your Abilities reduce Magic Resistance by ${fixed(
@@ -829,6 +932,10 @@ const _getLocaleItemDescription = (
             ItemAbilityData.KIRIN_STAFF_MAGIC_RESISTANCE_REDUCTION * 100,
             1
           )}%，此效果將不會疊加於其他資源`,
+          pl: `Twoje Umiejętności zmniejszają Odporność Magiczną przeciwników o ${fixed(
+            ItemAbilityData.KIRIN_STAFF_MAGIC_RESISTANCE_REDUCTION * 100,
+            1
+          )}% przez 4 sekundy.`,
         },
       }
     case ItemList.Corrupted_Staff:
@@ -838,6 +945,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado corrompido',
           ru: 'Искажённый посох',
           zh: '腐化的法棍',
+          pl: 'Zepsuta Laska',
         },
         desc: {
           en: `Increases your Ability Power by ${fixed(ItemAbilityData.CORRUPTED_STAFF_BONUS_AP * 100, 1)}%.`,
@@ -847,6 +955,7 @@ const _getLocaleItemDescription = (
           )}% de poder de habilidade!`,
           ru: `Повышает вашу Силу умений на ${fixed(ItemAbilityData.CORRUPTED_STAFF_BONUS_AP * 100, 1)}%.`,
           zh: `提供額外的 ${fixed(ItemAbilityData.CORRUPTED_STAFF_BONUS_AP * 100, 1)}%技能威力！`,
+          pl: `Zwiększa twoją Moc Umiejętności o ${fixed(ItemAbilityData.CORRUPTED_STAFF_BONUS_AP * 100, 1)}%.`,
         },
       }
     case ItemList.Frozen_Staff:
@@ -857,6 +966,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado da Imperatriz Congelada',
           fr: 'Baguette gelée',
           zh: '冰結法棍',
+          pl: 'Laska Mroźnej Cesarzowej',
         },
         desc: {
           en: `Your Abilities apply a stack of magical frost on the enemy. At ${
@@ -877,6 +987,9 @@ const _getLocaleItemDescription = (
           cz: `Vaše schopnosti působí na nepřátele vrstvami. Po dosažení ${
             ItemAbilityData.FROZEN_STAFF_STACKS
           } vrstev je nepřítel postižen Zimní proklěti - ${getFrigidCurseDescription()}`,
+          pl: `Twoje Umiejętności nakładają Ładunki Mrozu na przeciwniku. Przy ${
+            ItemAbilityData.FROZEN_STAFF_STACKS
+          } ładunkach, na przeciwnika nałożona zostaje Klątwa Lodu - ${getFrigidCurseDescription()}`,
         },
       }
     case ItemList.Iron_Rod:
@@ -887,6 +1000,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado dos Guerreiros de ferro',
           fr: 'Baguette de fer',
           zh: '鐵之法棒',
+          pl: 'Laska Żelaznych Wojowników',
         },
         desc: { en: getIronRodOrHarpoonDescription() },
       }
@@ -898,6 +1012,7 @@ const _getLocaleItemDescription = (
           br: 'Arpão Mágico',
           fr: 'Harpon magique',
           zh: '魔法叉戟',
+          pl: 'Magiczny Harpun',
         },
         desc: { en: getIronRodOrHarpoonDescription(true) },
       }
@@ -910,6 +1025,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado Orquídea da Malevolência',
           fr: 'Orchidée de Malveillance',
           zh: '惡毒蘭花',
+          pl: 'Orchidea Wrogości'
         },
         desc: {
           en:
@@ -952,6 +1068,14 @@ const _getLocaleItemDescription = (
             ).toFixed(1)}%追加為魔法傷害。` +
             '\n' +
             getIronRodOrHarpoonDescription(),
+          pl:
+            `Wystrzeliwuje przeszywającą, mroczną strzałę, uciszając wszystkich przeciwników, których trafi na ${(
+              ItemAbilityData.ORCHID_OF_MALEVOLENCE_DURATION / 1000
+            ).toFixed(1)} sekund. Na koniec swojego czasu trwania, zadaje ${(
+              ItemAbilityData.ORCHID_OF_MALEVOLENCE_DAMAGE_PERC * 100
+            ).toFixed(1)}% obrażeń otrzymanych podczas uciszenia jako dodatkowe Obrażenia Magiczne.` +
+            '\n' +
+            getIronRodOrHarpoonDescription(),
         },
       }
     case ItemList.Divine_Staff_T2:
@@ -962,6 +1086,7 @@ const _getLocaleItemDescription = (
           br: 'Cajado da Deusa da floresta',
           fr: 'Baguette divine',
           zh: '神聖法棍',
+          pl: 'Boska Laska',
         },
         desc: {
           en: `Restores ${ItemAbilityData.DIVINE_STAFF_HEAL_T2} Health for nearby allies and grants ${
@@ -994,6 +1119,12 @@ const _getLocaleItemDescription = (
             ItemAbilityData.DIVINE_STAFF_DURATION / 1000
           ).toFixed(1)}秒並移除所有負面效果
                         \n 此效果有內建 12秒冷卻時間 (無法透過縮短冷卻時間來減少)，在期間內，再次發動效果將被完全無試`,
+          pl: `Odnawia ${ItemAbilityData.DIVINE_STAFF_HEAL_T2} Zdrowia pobliskim sojusznikom i zapewnia ${
+            ItemAbilityData.DIVINE_STAFF_BONUS_SPEED
+          } Prędkości Ruchu na ${(ItemAbilityData.DIVINE_STAFF_DURATION / 1000).toFixed(
+            1
+          )} sekundy wszystkim sojusznikom w zasięgu ${ItemAbilityData.ACTIVE_EFFECT_RADIUS}px.
+                        \n Ten efekt posiada indywidualny Czas Odnowienia, który zapobiega wszelkim innym aktywacjom przez 12 sekund. Ten indywidualny Czas Odnowienia nie może być zredukowany przez Skrócenie Czasu Oczekiwania.`,
         },
       }
 
@@ -1005,6 +1136,7 @@ const _getLocaleItemDescription = (
           br: 'Escudo Vampírico',
           fr: 'Bouclier vampirique',
           zh: '吸血鬼護盾',
+          pl: 'Wampiryczna Tarcza',
         },
         desc: {
           en: `Upon taking player-based damage and falling below ${fixed(
@@ -1021,6 +1153,12 @@ const _getLocaleItemDescription = (
           } Регенерации здоровья на ${toSec(
             ItemAbilityData.VAMPIRIC_SHIELD_DURATION
           )} (Срабатывает только при получении урона от вражеских героев)`,
+          pl: `Przy przyjmowaniu obrażeń od przeciwnika i w skutek zejściu poniżej ${fixed(
+            ItemAbilityData.VAMPIRIC_SHIELD_THRESHOLD * 100,
+            1
+          )}% Zdrowia, oczyszcza cię z wszelkich negatywnych efektów i zwiększa Regenerację Zdrowia o ${
+            ItemAbilityData.VAMPIRIC_SHIELD_HEALTH_REGEN
+          } na ${toSec(ItemAbilityData.VAMPIRIC_SHIELD_DURATION)}.`,
         },
       }
 
@@ -1032,6 +1170,7 @@ const _getLocaleItemDescription = (
           br: 'Escudo da Deusa da floresta',
           fr: 'Bouclier divin',
           zh: '神聖護盾',
+          pl: 'Boska Tarcza',
         },
         desc: {
           en: `Cleanses all negative effects from nearby allies and grants ${ItemAbilityData.DIVINE_SHIELD_BONUS_HPR} Health Regen to nearby allies for 4 Seconds.`,
@@ -1042,6 +1181,7 @@ const _getLocaleItemDescription = (
           zh: `将净化应用于所有附近的盟友，可消除所有负面效果并赋予${ItemAbilityData.DIVINE_SHIELD_BONUS_HPR}短时间的恢复健康。`,
           cz: `Aplikujte očištění všem blízkým spojencům, které odstraní všechny negativní účinky a poskytne ${ItemAbilityData.DIVINE_SHIELD_BONUS_HPR} obnovu zdraví po krátkou dobu.`,
           fr: `Appliquer le nettoyage à tous les alliés proches qui supprime tous les effets négatifs et accorde ${ItemAbilityData.DIVINE_SHIELD_BONUS_HPR} de régénération de santé pour une courte durée.`,
+          pl: `Oczyszcza pobliskich sojuszników z wszelkich negatywnych efektów oraz zapewnia im ${ItemAbilityData.DIVINE_SHIELD_BONUS_HPR} Regeneracji Zdrowia przez 4 sekundy.`,
         },
       }
 
@@ -1054,6 +1194,7 @@ const _getLocaleItemDescription = (
           fr: 'Bouclier de Défiance',
           zh: '蔑视之盾',
           cz: 'Štít odporu',
+          pl: 'Tarcza Buntu'
         },
         desc: {
           en: `Grants ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_MR} Magic Resistance and ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_HPR} Health Regen to nearby allies.`,
@@ -1062,6 +1203,7 @@ const _getLocaleItemDescription = (
           zh: `为附近的盟友提供${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_MR}魔法抗性和${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_HPR}生命回复。`,
           cz: `Poskytuje sousedním spojencům ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_MR} odolnost proti kouzlu a ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_HPR} regeneraci zdraví.`,
           ru: `Увеличивает Сопротивление магии у всех ближайших союзников на ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_MR} и Регенерацию здоровья на ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_HPR}.`,
+          pl: `Zapewnia ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_MR} Odporności Magicznej oraz ${ItemAbilityData.SHIELD_OF_DEFIANCE_BONUS_HPR} Regeneracji Zdrowia pobliskim sojusznikom.`,
         },
       }
 
@@ -1074,6 +1216,7 @@ const _getLocaleItemDescription = (
           br: 'Escudo de Espinhos sombrio',
           fr: 'Bouclier piquant',
           zh: '尖刺護盾',
+          pl: 'Kolczasta Tarcza',
         },
         desc: {
           en: `Deals ${damage} (+ ${ItemAbilityData.SPIKE_SHIELD_DAMAGE_PER_LEVEL}% * level) Normal Damage per second to nearby enemies.`,
@@ -1081,6 +1224,7 @@ const _getLocaleItemDescription = (
           br: `Causa ${damage} (+ ${ItemAbilityData.SPIKE_SHIELD_DAMAGE_PER_LEVEL}% * nível) dano normal a todas as unidades inimigas em curta distância a cada segundo`,
           cz: `Každou sekundu způsobuje ${damage} (+ ${ItemAbilityData.SPIKE_SHIELD_DAMAGE_PER_LEVEL}% * úroveň) normálního poškození všem nepřátelským jednotkám v krátké vzdálenosti`,
           zh: `每秒对短距离内的所有敌方单位造成 ${damage} (+ ${ItemAbilityData.SPIKE_SHIELD_DAMAGE_PER_LEVEL}% * 等级) 的正常伤害`,
+          pl: `Zadaje ${damage} (+ ${ItemAbilityData.SPIKE_SHIELD_DAMAGE_PER_LEVEL}% * poziom) Obrażeń Fizycznych na sekundę pobliskim przeciwnikom.`,
         },
       }
     }
@@ -1093,6 +1237,7 @@ const _getLocaleItemDescription = (
           br: 'Defensor de Garun',
           fr: 'Bouclier de Garun',
           zh: '加侖的守護者',
+          pl: 'Obrońca Garuna',
         },
         desc: {
           en: `Upon receiving player-based damage and falling below ${fixed(
@@ -1147,6 +1292,12 @@ const _getLocaleItemDescription = (
           } normálního poškození. Tento efekt nemůže být aktivován více než jednou za ${toSec(
             ItemAbilityData.GARUNS_DEFENDER_COOLDOWN
           )}.`,
+          pl: `Przy przyjmowaniu obrażeń od przeciwnika i w skutek zejściu poniżej ${fixed(
+            ItemAbilityData.GARUNS_DEFENDER_THRESHOLD * 100,
+            1
+          )}% Zdrowia, uwalnia falę po 0.5 sekundy, zadając ${
+            ItemAbilityData.GARUNS_DEFENDER_DAMAGE
+          } Obrażeń Fizycznych i ogłusza pobliskich przeciwników na ${toSec(ItemAbilityData.GARUNS_DEFENDER_STUN_DURATION)}.`,
         },
       }
     case ItemList.Plate_Shield:
@@ -1157,6 +1308,7 @@ const _getLocaleItemDescription = (
           br: 'Escudo de Placas reforçadas',
           fr: 'Bouclier à plaque',
           zh: '金屬護盾',
+          pl: 'Tarcza Płytowa',
         },
         desc: {
           en: `Releases a shockwave which travels through the air, dealing ${
@@ -1177,6 +1329,11 @@ const _getLocaleItemDescription = (
           zh: `釋放衝擊波，給予 ${ItemAbilityData.PLATE_SHIELD_DAMAGE_AOE}點一般傷害並降低 ${(
             ItemAbilityData.PLATE_SHIELD_SLOW_DURATION / 1000
           ).toFixed(1)}秒敵方的移動速度值 ${ItemAbilityData.PLATE_SHIELD_SLOW_AOE}`,
+          pl: `Uwalnia falę uderzeniową, która zadaje ${
+            ItemAbilityData.PLATE_SHIELD_DAMAGE_AOE
+          } Obrażeń Fizycznych wszystkim trafionym nią przeciwnikom, zmniejszając ich Prędkość Ruchu o ${
+            ItemAbilityData.PLATE_SHIELD_SLOW_AOE
+          } na ${(ItemAbilityData.PLATE_SHIELD_SLOW_DURATION / 1000).toFixed(1)} sekundy.`,
         },
       }
     case ItemList.Kirins_Defender:
@@ -1187,6 +1344,7 @@ const _getLocaleItemDescription = (
           br: 'Defensor de Kirin',
           fr: 'Bouclier de Kirin',
           zh: '麒麟的守護者',
+          pl: 'Obrońca Kirin',
         },
         desc: {
           en: `Upon getting hit by any Crowd Control effect, block that effect. Sucessfully blocking increases Magic Resistance by ${calculateMagicDefense(
@@ -1207,6 +1365,9 @@ const _getLocaleItemDescription = (
           ).toFixed()}秒內格擋下一個有冷卻時間效果的招式，成功格擋時提供 ${(
             ItemAbilityData.KIRINS_DEFENDER_DURATION / 1000
           ).toFixed()}秒 ${calculateMagicDefense(ItemAbilityData.KIRINS_DEFENDER_BONUS_MR)}的魔法抗性。`,
+          pl: `Gdy zostaniesz trafiony jakimkolwiek efektem Kontroli Tłumu, blokujesz ten efekt. Pomyślny blok zwiększa twoją Odporność Magiczną o ${calculateMagicDefense(
+            ItemAbilityData.KIRINS_DEFENDER_BONUS_MR
+          )} na ${(ItemAbilityData.KIRINS_DEFENDER_DURATION / 1000).toFixed()} sekundy.`,
         },
       }
     /** Rings */
@@ -1218,6 +1379,7 @@ const _getLocaleItemDescription = (
           br: 'Sabre Demoníaco',
           fr: 'Sabre du démon',
           zh: '惡魔軍刀',
+          pl: 'Demoniczna Szabla'
         },
         desc: {
           en: `Your Basic Attacks apply a stack demonic weakening, up to a maximum of ${
@@ -1235,6 +1397,11 @@ const _getLocaleItemDescription = (
             ItemAbilityData.DEMON_SABRE_ARMOR_REDUCTION * 100
           )}% na 4 vteřiny.`,
           zh: `你的一般攻擊降低 4秒敵方裝甲值 ${Math.floor(ItemAbilityData.DEMON_SABRE_ARMOR_REDUCTION * 100)}%`,
+          pl: `Twoje Ataki Podstawowe nakładają ładunki Demonicznego Osłabienia, do maksymalnie ${
+            ItemAbilityData.DEMON_SABRE_ARP_MAX_STACKS
+          } ładunków. Każdy ładunek zmniejsza Pancerz przeciwnika o ${Math.floor(
+            ItemAbilityData.DEMON_SABRE_ARMOR_REDUCTION * 100
+          )}% na 4 sekundy`,
         },
       }
     case ItemList.Demonic_Ring:
@@ -1245,6 +1412,7 @@ const _getLocaleItemDescription = (
           br: 'Anel Demoníaco',
           fr: 'Anneau démonique',
           zh: '惡魔手環',
+          pl: 'Demoniczny Pierścień',
         },
         desc: {
           en: `Your Basic Attacks decrease Armor by ${fixed(
@@ -1290,6 +1458,17 @@ const _getLocaleItemDescription = (
                      }點攻擊傷害 (最大值 ${
             ItemAbilityData.DEMON_RING_STACK_DMG * ItemAbilityData.DEMON_RING_MAX_STACKS
           })。所有疊加在死亡後歸零。`,
+          pl: `Twoje Ataki Podstawowe zmniejszają Pancerz przeciwnika o ${fixed(
+            ItemAbilityData.DEMON_RING_ARMOR_REDUCTION * 100,
+            1
+          )}% na 4 sekundy. \n
+                     Zbierasz do ${
+                       ItemAbilityData.DEMON_RING_MAX_STACKS
+                     } ładunków Demonicznej Mocy za każdego zabitego miniona (+1 ładunek), przeciwnika (+5 ładunków), lub asystę (+2 ładunki). Każdy ładunek zwiększa twoje Obrażenia Fizyczne o ${
+            ItemAbilityData.DEMON_RING_STACK_DMG
+          } (Maks.: ${ItemAbilityData.DEMON_RING_STACK_DMG * ItemAbilityData.DEMON_RING_MAX_STACKS} Obrażeń Fizycznych przy ${
+            ItemAbilityData.DEMON_RING_MAX_STACKS
+          } ładunkach). Tracisz wszystkie ładunki w wypadku śmierci.`,
         },
       }
     case ItemList.Divine_Ring: {
@@ -1301,6 +1480,7 @@ const _getLocaleItemDescription = (
           br: 'Anel Divino',
           cz: 'Božský prsten',
           zh: '神圣戒指',
+          pl: 'Boski Pierścień',
         },
         desc: {
           en: `Whenever you heal yourself or an ally, gain a stack of divine power, up to a maximum of ${ItemAbilityData.DIVINE_RING_MAX_STACKS} stacks. Each stack increases your Ability Power by ${ItemAbilityData.DIVINE_RING_BONUS_ABILITY_POWER}. \n \n Increases all healing done by ${bonusHealing}%.`,
@@ -1308,7 +1488,9 @@ const _getLocaleItemDescription = (
           br: `O curar feito temporariamente aumenta o poder de habilidade em ${ItemAbilityData.DIVINE_RING_BONUS_ABILITY_POWER} (acumulando até ${ItemAbilityData.DIVINE_RING_MAX_STACKS} vezes). \n \n Aumenta todo o curar feito em ${bonusHealing}%.`,
           cz: `Léčení dočasně zvýší schopnost síly o ${ItemAbilityData.DIVINE_RING_BONUS_ABILITY_POWER} (může být až ${ItemAbilityData.DIVINE_RING_MAX_STACKS}krát). \n \n Zvyšuje všechno léčení o ${bonusHealing}%.`,
           zh: `暂时性的治疗会使能力增加 ${ItemAbilityData.DIVINE_RING_BONUS_ABILITY_POWER}（最多叠加 ${ItemAbilityData.DIVINE_RING_MAX_STACKS} 次）。 \n \n 增加所有治疗量 ${bonusHealing}%。`,
+          pl: `Gdy leczysz siebie lub swojego sojusznika, zdobywasz ładunek Boskiej Mocy, aż do maksymalnie ${ItemAbilityData.DIVINE_RING_MAX_STACKS} ładunków. Każdy ładunek zwiększa twoją Moc Umiejętności o ${ItemAbilityData.DIVINE_RING_BONUS_ABILITY_POWER}. \n \n Zwiększa każde wykonane leczenie o ${bonusHealing}%.`,
         },
+        
       }
     }
     case ItemList.Frost_Ring: {
@@ -1318,6 +1500,7 @@ const _getLocaleItemDescription = (
           ru: 'Кольцо Ледяной Императрицы',
           br: 'Anel Congelado da Imperatriz',
           zh: '冰霜手環',
+          pl: 'Pierścień Mroźnej Cesarzowej'
         },
         desc: {
           en: `Emits a freezing wave, dealing ${
@@ -1350,6 +1533,11 @@ const _getLocaleItemDescription = (
           } magického poškození nepřátelům a aplikuje Prokletí mrazu - (${getFrigidCurseDescription()}). Pokud je cíl ovlivněn Prokletím mrazu, zmrazí nepřítele na ${(
             ItemAbilityData.FROST_RING_ROOT_DURATION / 1000
           ).toFixed(1)} a zabrání mu všem pohybům.`,
+          pl: `Wypuszcza falę mrozu, zadając ${
+            ItemAbilityData.FROST_RING_DAMAGE
+          } Obrażeń Magicznych wszystkim trafionym przeciwnikom. Jeżeli przeciwnik nie jest akurat pod wpływem Klątwy Lodu, fala ją nakłada - (${getFrigidCurseDescription()}). Jeśli przeciwnik jest pod wpływem Klątwy Lodu, fala zamraża go na ${(
+            ItemAbilityData.FROST_RING_ROOT_DURATION / 1000
+          ).toFixed(1)} sekundy, zapobiegając wszelkim formom ruchu.`,
         },
       }
     }
@@ -1361,6 +1549,7 @@ const _getLocaleItemDescription = (
           br: 'Anel do Mago do tempo',
           ru: 'Кольцо Хроноса',
           zh: '時辰手環',
+          pl: 'Pierścień Chronosa',
         },
         desc: {
           en: `Whenever you cast an ability, all of your cooldowns decrease by ${toSec(
@@ -1381,6 +1570,9 @@ const _getLocaleItemDescription = (
           ru: `Каждый раз при применении способности перезарядка ваших способностей уменьшается на ${toSec(
             ItemAbilityData.CHRONOS_RING_CD_REDUCTION
           )} \n При убийстве врага или получении содействия, перезарядка ваших способностей сбрасывается. (Перезарядка предметов не сбрасывается)`,
+          pl: `Gdy używasz Umiejętności, wszystkie twoje Czasy Odnowienia zmniejszają się o ${toSec(
+            ItemAbilityData.CHRONOS_RING_CD_REDUCTION
+          )}.\nPrzy otrzymaniu zabójstwa lub asysty, resetuje Czasy Odnowienia twoich Umiejętności (Skrócenie Czasu Odnowienia Umiejętności nie działa na Czasy Odnowienia przedmiotów).`,
         },
       }
     case ItemList.Corrupted_Ring:
@@ -1390,12 +1582,14 @@ const _getLocaleItemDescription = (
           ru: 'Искажённое кольцо',
           br: 'Anel Corrompido',
           zh: '腐化的手環',
+          pl: 'Pierścień Zepsucia',
         },
         desc: {
           en: 'Dashes you forward for a short distance.',
           ru: 'Вы совершаете рывок в направлении своего движения.',
           br: 'Lança seu personagem para frente na direção que ele está olhando.',
           zh: '朝你的前方向前衝刺',
+          pl: 'Zrywasz się do przodu na krótki dystans.',
         },
       }
 
@@ -1406,6 +1600,7 @@ const _getLocaleItemDescription = (
           br: 'Anel do Lutador',
           ru: 'Кольцо берсерка',
           zh: '狂戰士手環',
+          pl: 'Pierścień Berserkera',
         },
         desc: {
           en: `Whenever you receive Normal Damage, gain a stack of berserk, up to a maximum of 8 stacks. Each stack increases your Attack Speed by ${Math.floor(
@@ -1423,6 +1618,9 @@ const _getLocaleItemDescription = (
           cz: `Pokaždé, když obdržíte normální poškození, získáte stack berserk, až do maxima 8 stacků. Každý stack zvýší vaši rychlost útoku o ${Math.floor(
             ItemAbilityData.BERSERKER_RING_BONUS_ATTACK_SPEED * 100
           )}% po dobu ${(ItemAbilityData.BERSERKER_RING_DURATION / 1000).toFixed(1)} sekund.`,
+          pl: `Gdy otrzymujesz Obrażenia Fizyczne, zdobywasz ładunek Berserkera, aż do maksymalnie 8 ładunków. Każdy ładunek zwiększa twoją Prędkość Ataku o ${Math.floor(
+            ItemAbilityData.BERSERKER_RING_BONUS_ATTACK_SPEED * 100
+          )}% na ${(ItemAbilityData.BERSERKER_RING_DURATION / 1000).toFixed(1)} sekundy.`,
         },
       }
 
@@ -1434,6 +1632,7 @@ const _getLocaleItemDescription = (
           ru: 'Броня Ледяного Императора',
           br: 'Armadura do Lorde congelado',
           zh: '冰霜鎧甲',
+          pl: 'Zbroja Mroźnego Cesarza',
         },
         desc: {
           en: `Reduces the effect of all heals, regeneration, and lifesteal for nearby enemies by ${(
@@ -1454,6 +1653,9 @@ const _getLocaleItemDescription = (
           cz: `Sníží efekt všech léčení, regenerace a životodárného kradení pro blízké nepřátele o ${(
             ItemAbilityData.FROST_ARMOR_HPREDUC * 100
           ).toFixed()}%.`,
+          pl: `Redukuje efekt każdego leczenia, Regeneracji i Kradzieży Życia pobliskich przeciwników o ${(
+            ItemAbilityData.FROST_ARMOR_HPREDUC * 100
+          ).toFixed()}%.`,
         },
       }
 
@@ -1464,6 +1666,7 @@ const _getLocaleItemDescription = (
           ru: 'Броня пустоты',
           br: 'Armadura do Abismo',
           zh: '虛空鎧甲',
+          pl: 'Pancerz Pustki',
         },
         desc: {
           en: `Grants you invisibility for ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(
@@ -1486,6 +1689,13 @@ const _getLocaleItemDescription = (
           zh: `使你 ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(1)}秒隱蔽，額外增加你的移動速度值 ${
             ItemAbilityData.VOID_ARMOR_MOVESPEED_BONUS
           }與一般傷害值 ${ItemAbilityData.VOID_ARMOR_BONUS_DAMAGE} (效果在攻擊或發動技能後移除)`,
+          pl: `Zapewnia ci niewidzialność na ${(ItemAbilityData.VOID_ARMOR_DURATION / 1000).toFixed(
+            1
+          )} sekundy oraz zwiększa Prędkość Ruchu o ${
+            ItemAbilityData.VOID_ARMOR_MOVESPEED_BONUS
+          }. Gdy użyjesz Umiejętności lub Ataku Podstawowego podczas trwania niewidzialności, ściągasz swoją niewidzialność oraz dodatkową Prędkość Ruchu, lecz zwiększasz Obrażenia Fizyczne o ${
+            ItemAbilityData.VOID_ARMOR_BONUS_DAMAGE
+          } na krótką chwilę.`,
         },
       }
 
@@ -1496,6 +1706,7 @@ const _getLocaleItemDescription = (
           ru: 'Броня титана',
           br: 'Armadura do Titan',
           zh: '泰坦的鎧甲',
+          pl: 'Pancerz Tytana',
         },
         desc: {
           en: `Makes you immune to all incoming damage for ${(ItemAbilityData.TITAN_ARMOR_DURATION / 1000).toFixed(
@@ -1516,6 +1727,11 @@ const _getLocaleItemDescription = (
           zh: `增加你的回血速度 ${ItemAbilityData.TITAN_ARMOR_REGENERATION}點，移除所有負面效果並使你 ${(
             ItemAbilityData.TITAN_ARMOR_DURATION / 1000
           ).toFixed(1)}秒內無視所有襲來的攻擊。效果期間你無法採取任何動作`,
+          pl: `Czyni cię niewrażliwym na wszelkie nadchodzące obrażenia przez ${(ItemAbilityData.TITAN_ARMOR_DURATION / 1000).toFixed(
+            1
+          )} sekundy, zwiększa Regenerację Zdrowia o ${
+            ItemAbilityData.TITAN_ARMOR_REGENERATION
+          }, oraz oczyszcza ze wszystkich negatywnych efektów papciu. W trakcie trwania efektu, nie możesz się ruszać ani używać Umiejętności, Ataków Podstawowych, oraz przedmiotów.`,
         },
       }
     case ItemList.ChestOfMalevolence:
@@ -1525,6 +1741,7 @@ const _getLocaleItemDescription = (
           br: 'Armadura da Malevolência',
           ru: 'Нагрудник злобы',
           zh: '惡毒胸甲',
+          pl: 'Klata Wrogości'
         },
         desc: {
           en: `Upon receiving Magic Damage, apply a stack of malevolent curse on the caster, up to a maximum of ${
@@ -1560,6 +1777,11 @@ const _getLocaleItemDescription = (
             ItemAbilityData.CHEST_OF_MALEVOLENCE_REDUCE_AP * 100,
             1
           )}%. (Prokletí se může nakumulovat až do ${ItemAbilityData.CHEST_OF_MALEVOLENCE_MAX_STACKS} vrstev)`,
+          pl: `Gdy otrzymasz Obrażenia Magiczne, nakładasz ładunki Wrogiej Klątwy na atakującym, aż do maksymalnie ${
+            ItemAbilityData.CHEST_OF_MALEVOLENCE_MAX_STACKS
+          } ładunków. Każdy ładunek zmniejsza Prędkość Ruchu przeciwnika o ${
+            ItemAbilityData.CHEST_OF_MALEVOLENCE_REDUCE_MS
+          } oraz jego Moc Umiejętności o ${fixed(ItemAbilityData.CHEST_OF_MALEVOLENCE_REDUCE_AP * 100, 1)}%.`,
         },
       }
 
@@ -1571,6 +1793,7 @@ const _getLocaleItemDescription = (
           ru: 'Исцеляющее зелье',
           br: 'Poção das fadas',
           zh: '治癒藥水',
+          pl: 'Mikstura Leczenia',
         },
         desc: {
           en: `Increases Health Regeneration by ${ItemAbilityData.HEALING_POTION_HEAL_PER_SEC} for ${(
@@ -1587,6 +1810,9 @@ const _getLocaleItemDescription = (
           zh: `賜予 ${(ItemAbilityData.HEALING_POTION_DURATION / 1000).toFixed(1)}秒 ${
             ItemAbilityData.HEALING_POTION_HEAL_PER_SEC
           }點回血速度 \n 如果你遭受攻擊，將會失去效用！`,
+          pl: `Zwiększa Regenerację Zdrowia o ${ItemAbilityData.HEALING_POTION_HEAL_PER_SEC} na ${(
+            ItemAbilityData.HEALING_POTION_DURATION / 1000
+          ).toFixed(1)} sekundy. \n Jeśli otrzymasz obrażenia, stracisz efekt mikstury!`,
         },
       }
 
@@ -1597,6 +1823,7 @@ const _getLocaleItemDescription = (
           ru: 'Тотем-наблюдатель',
           br: 'Pedra do Observador da floresta',
           zh: '偵查守衛',
+          pl: 'Totem Wizji',
         },
         desc: {
           en: `Plants an Observer Ward, an invisible watcher that gives your team obstructed vision in a ${
@@ -1619,6 +1846,11 @@ const _getLocaleItemDescription = (
           }像素範圍內的受限視線。持續 ${(ItemAbilityData.WARD_DURATION / 1000).toFixed(
             1
           )}。如果守衛能被敵隊看見，他們能摧毀它！`,
+          pl: `Stawiasz Totem Wizji, który zapewnia twojej drużynie ograniczoną wizję w zasięgu ${
+            ItemAbilityData.WARD_VISION
+          }px do maksymalnie ${(ItemAbilityData.WARD_DURATION / 1000).toFixed(
+            1
+          )} sekund. Jeżeli Totem zostanie zauważony przez przeciwną drużyną, mogą go zniszczyć!`,
         },
       }
     case ItemList.Sentry_Ward:
@@ -1628,6 +1860,7 @@ const _getLocaleItemDescription = (
           br: 'Pedra do Observador corrompida',
           ru: 'Сторожевой тотем',
           zh: '哨兵守衛',
+          pl: 'Totem Strażnika'
         },
         desc: {
           en: `Plants a Sentry Ward, an invisible watcher that grants True Sight, the ability to see invisible enemy units and wards, to any existing allied vision within a radius. lasts for ${(
@@ -1644,6 +1877,9 @@ const _getLocaleItemDescription = (
           zh: `植入一個哨兵守衛，一個隱蔽的觀察者賜予絕對視線，有能夠讓友軍在範圍內看見隱蔽敵方單位與守衛的能力。持續 ${(
             ItemAbilityData.SENTRY_WARD_DURATION / 1000
           ).toFixed(1)}秒。如果守衛能被敵隊看見，他們能摧毀它！`,
+          pl: `Stawiasz Totem Strażnika, który zapewnia ci Czyste Widzenie, czyli umiejętność dostrzegania niewidzialnych wrogich jednostek i Totemów wszystkim źródłom sojuszniczej wizji w zasięgu. Trwa przez ${(
+            ItemAbilityData.SENTRY_WARD_DURATION / 1000
+          ).toFixed(1)} sekundy. Jeżeli Totem zostanie zauważony przez przeciwną drużyną, mogą go zniszczyć!`,
         },
       }
     case ItemList.Potion_Of_Magic:
@@ -1653,12 +1889,14 @@ const _getLocaleItemDescription = (
           br: 'Poção de Magia corrompida',
           ru: 'Зелье волшебства',
           zh: '魔法藥水',
+          pl: 'Mikstura Mocy',
         },
         desc: {
           en: `Grants a permanent stack of magical strength, up to a maximum of 5 stacks. Each stack increases Ability Power by ${ItemAbilityData.POTION_OF_MAGIC_ABILITY_POWER}!`,
           br: `Da a quem beber ${ItemAbilityData.POTION_OF_MAGIC_ABILITY_POWER} de Poder de habilidade permanentemente, acumula até 5 vezes!\n Sabor uva da floresta.`,
           ru: `Даёт вам ${ItemAbilityData.POTION_OF_MAGIC_ABILITY_POWER} Силы умений навсегда. Эффект складывается до 5 раз!`,
           zh: `永久提供 ${ItemAbilityData.POTION_OF_MAGIC_ABILITY_POWER}點技能威力，疊加最多五次！`,
+          pl: `Zapewnia permanentny ładunek Mocy Umiejętności, aż do maksymalnie 5 ładunków. Każdy ładunek zwiększa twoją Moc Umiejętności o ${ItemAbilityData.POTION_OF_MAGIC_ABILITY_POWER}!`,
         },
       }
     case ItemList.Corrupted_Potion:
@@ -1668,12 +1906,14 @@ const _getLocaleItemDescription = (
           br: 'Poção de força corrompida',
           ru: 'Искажённое зелье',
           zh: '腐化的藥水',
+          pl: 'Mikstura Zepsucia',
         },
         desc: {
           en: `Grants a permanent stack of physical strength, up to a maximum of 5 stacks. Each stack increases Attack Damage by ${ItemAbilityData.CORRUPTED_POTION_DAMAGE}!`,
           br: `Da a quem beber ${ItemAbilityData.CORRUPTED_POTION_DAMAGE} de dano de ataque permanentemente, acumula até 5 vezes!\n Sabor cereja do campo.`,
           ru: `Даёт вам ${ItemAbilityData.CORRUPTED_POTION_DAMAGE} Силы атаки навсегда. Эффект складывается до 5 раз!`,
           zh: `永久提供 ${ItemAbilityData.CORRUPTED_POTION_DAMAGE}點攻擊傷害，疊加最多五次！`,
+          pl: `Zapewnia permanentny ładunek Siły Ataku, aż do maksymalnie 5 ładunków. Każdy ładunek zwiększa twoje Obrażenia Fizyczne o ${ItemAbilityData.CORRUPTED_POTION_DAMAGE}!`,
         },
       }
     case ItemList.Kirins_Bow: {
@@ -1686,6 +1926,7 @@ const _getLocaleItemDescription = (
           fr: 'Arc de Kirin',
           br: 'Arco de Kirin',
           ru: 'Лук Кирина',
+          pl: 'Łuk Kirin',
         },
         desc: {
           en: `Your Basic Attacks apply a stack of magical poison. At ${
@@ -1728,6 +1969,13 @@ const _getLocaleItemDescription = (
           } магического урона и уменьшает Сопротивление магии на  ${asAndMsReduction}% на ${toSec(
             ItemAbilityData.KIRINS_BOW_DURATION
           )}`,
+          pl: `Twoje Ataki Podstawowe nakładają ładunek Magicznej Trutki. Przy ${
+            ItemAbilityData.KIRINS_BOW_MAX_STACKS
+          } ładunkach, Magiczna Trutka wybucha, zadając ${
+            ItemAbilityData.KIRINS_BOW_TRIGGER_DAMAGE_OVER_TIME
+          } Obrażeń Magicznych oraz zmniejszając Odporność Magiczną o ${asAndMsReduction}% na ${toSec(
+            ItemAbilityData.KIRINS_BOW_DURATION
+          )}.`,
         },
       }
     }
@@ -1740,6 +1988,7 @@ const _getLocaleItemDescription = (
           zh: '加伦的魅力',
           cz: 'Kouzlo Garunové',
           ru: 'Оберег Гаруна',
+          pl: 'Urok Garuna',
         },
         desc: {
           en: `Every ${toSec(
@@ -1782,6 +2031,13 @@ const _getLocaleItemDescription = (
           } раз). (Получение физического урона забирает 1 заряд).\nДаёт ${
             ItemAbilityData.GARUNS_CHARM_AOE_ARMOR
           } Брони ближайшим союзникам.`,
+          pl: `Co każde ${toSec(
+            ItemAbilityData.GARUNS_CHARM_REPLENISH_COOLDOWN
+          )}, zdobywasz ładunek Ochrony Garuna, aż do maksymalnie ${
+            ItemAbilityData.GARUNS_CHARM_MAX_STACKS
+          } ładunków. Otrzymywanie Obrażeń Fizycznych ściąga ładunek. Każdy ładunek zwiększa twój Pancerz o ${
+            ItemAbilityData.GARUNS_CHARM_BONUS_ARMOR_STACK
+          }.\nZapewnia ${ItemAbilityData.GARUNS_CHARM_AOE_ARMOR} Pancerza pobliskim sojusznikom`,
         },
       }
     }
@@ -1794,6 +2050,7 @@ const _getLocaleItemDescription = (
           zh: '巫師魅力',
           cz: 'Kouzelníkův kouzlo',
           ru: 'Талисман волшебника',
+          pl: 'Urok Czarownika',
         },
         desc: {
           en: `Reduces Magic Resistance and positive aura durations by ${fixed(
@@ -1820,6 +2077,10 @@ const _getLocaleItemDescription = (
             ItemAbilityData.WIZARD_CHARM_AOE_MR_AND_BUFF_REDUCTION * 100,
             1
           )}%.`,
+          pl: `Redukuje Odporność Magiczną oraz Czasy Trwania pozytywnych aur o ${fixed(
+            ItemAbilityData.WIZARD_CHARM_AOE_MR_AND_BUFF_REDUCTION * 100,
+            1
+          )}% wszystkim pobliskim wrogom.`,
         },
       }
     }
@@ -1832,6 +2093,7 @@ const _getLocaleItemDescription = (
           zh: '腐化墜飾',
           cz: 'Zkorumpovaný náhrdelník',
           ru: 'Искажённый медальон',
+          pl: 'Zepsuty Medalik',
         },
         desc: {
           en: `Each Critical hit against an enemy gives you a stack of corrupted rage, up to a maximum of ${
@@ -1874,6 +2136,13 @@ const _getLocaleItemDescription = (
           } и Скорость передвижения на ${ItemAbilityData.CORRUPTED_LOCKET_BONUS_MS} на ${toSec(
             ItemAbilityData.CORRUPTED_LOCKET_DURATION
           )}.`,
+          pl: `Każde Krytyczne Trafienie przeciwnika zapewnia ci ładunek Zepsutego Gniewu, aż do maksymalnie ${
+            ItemAbilityData.CORRUPTED_LOCKET_MAX_STACKS
+          } ładunków. Każdy ładunek zwiększa twoje Obrażenia Fizyczne o ${
+            ItemAbilityData.CORRUPTED_LOCKET_BONUS_DAMAGE
+          } oraz Prędkość Ruchu o ${ItemAbilityData.CORRUPTED_LOCKET_BONUS_MS} na ${toSec(
+            ItemAbilityData.CORRUPTED_LOCKET_DURATION
+          )}.`,
         },
       }
     }
@@ -1910,6 +2179,11 @@ const getPoisonBowDescription = (duration: number) => {
     zh: `你的一般攻擊給予敵方英雄致命毒害，降低應目標物移動速度值 ${ItemAbilityData.POISON_BOW_SLOW}點並給予 ${(
       duration / 1000
     ).toFixed(1)}秒 ${ItemAbilityData.POISON_BOW_DAMAGE_OVER_TIME}點傷害。(此效果能疊加五次，每次攻擊刷新時長)`,
+    pl: `Twoje Ataki Podstawowe nakładają ładunki Śmiertelnej Trucizny, aż do maksymalnie 5 ładunków. Każdy ładunek zmniejsza twoją Prędkość Ruchu o ${
+      ItemAbilityData.POISON_BOW_SLOW
+    } oraz zadaje ${ItemAbilityData.POISON_BOW_DAMAGE_OVER_TIME} Obrażeń Magicznych na sekundę przez ${(duration / 1000).toFixed(
+      1
+    )} sekundy. `,
   }
 
   return text[LANG.value] ? text[LANG.value] : text['en']
@@ -1927,6 +2201,7 @@ const getIronRodOrHarpoonDescription = (tier2 = false) => {
     br: `Quando suas habilidades atingem um personagem inimigo, seu próximo ataque normal ganha um bônus de ${baseDamage} + ${bonusDamage}% de dano.`,
     fr: `Quand tes compétences K et L touchent un héros ennemi, ta prochaine attaque J fait ${baseDamage} + ${bonusDamage}% dégâts supplémentaires.`,
     zh: `當你的魔法攻擊擊中敵方英雄，你的下一個一般攻擊對敵方英雄造成額外 ${baseDamage} + ${bonusDamage}%  點一般傷害`,
+    pl: `Gdy twoje Umiejętności trafią przeciwnego bohatera, twój następny Atak Podstawowy zada ${baseDamage} (+ ${bonusDamage}% Mocy Umiejętności) dodatkowych Obrażeń Magicznych przeciwnikom.`,
   }
 
   return text[LANG.value] ? text[LANG.value] : text['en']
@@ -1960,6 +2235,11 @@ export const getFrigidCurseDescription = () => {
     cz: `Snížení rychlosti pohybu o ${ItemAbilityData.FRIGIT_CURSE_SLOW} a všech léčebných a regeneračních efektů o ${(
       ItemAbilityData.FRIGIT_CURSE_HEALING_REDUCTION * 100
     ).toFixed(1)}% během ${toSec(ItemAbilityData.FRIGIT_CURSE_DURATION)}`,
+    pl: `Redukuje Prędkość Ruchu o ${
+      ItemAbilityData.FRIGIT_CURSE_SLOW
+    } oraz wszelkie efekty leczenia i regeneracji o ${(
+      ItemAbilityData.FRIGIT_CURSE_HEALING_REDUCTION * 100
+    ).toFixed(1)}% na ${toSec(ItemAbilityData.FRIGIT_CURSE_DURATION)}.`,
   }
 
   return text[LANG.value] ? text[LANG.value] : text['en']
